@@ -19,7 +19,8 @@ class App(Tk):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
            
-        self.geometry("450x600") 
+        self.geometry("450x600")
+        self.resizable(False, False)
         self.title("PhoneBook")
 
         conteiner = Conteiner(self, layouts)
